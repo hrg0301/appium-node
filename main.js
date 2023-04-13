@@ -11,51 +11,15 @@ const opts = {
     platformName: "Android",
     deviceName: "myphone",
     automationName: "UiAutomator2",
-    udid: 'R3CM80YMLGT' //변경
+    udid: 'ce091609ad9db71d01', //변경
+    bundleId:'com.google.android.youtube'
   }
 };
 
 async function main() {
   const client = await wdio.remote(opts);
 
-  //핵심 로직 추가
-
-  // const BASIC_CLICK = [460, 900]
-  // const LEVELUP_CLICK = [870, 1600]
-
-
-  // while (1) {
-  //   try {
-  //     await client.touchAction([
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },
-  //       { action: 'tap', x: BASIC_CLICK[0], y: BASIC_CLICK[1] },])
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  // }
+  
 
 
   await client.deleteSession();
